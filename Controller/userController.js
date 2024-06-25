@@ -15,7 +15,7 @@ exports.createcustomer = async (req,res)=>{
                 "string.pattern.base":"name must only contain letters and spaces",
                 "string.empty":"name cannot be empty",
             }),
-            password:validator.string().pattern(new RegExp(/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/)).required()
+            password:validator.string().pattern(new RegExp(/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{10,}$/)).required()
             .messages({
               'string.min': 'Password must be at least 10 characters long',
               'string.pattern': 'Password must contain a mix of uppercase, lowercase, special characters and numbers'
