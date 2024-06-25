@@ -8,7 +8,7 @@ const barberSchema = new mongoose.Schema({
     Email: {type:String,
          unique: true,
          require: [true, "kindly provide your email"]
-    },
+    }, 
     Password:{type:String,
         require: [true, "kindly provide password to process"]
     },

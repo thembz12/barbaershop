@@ -1,2 +1,8 @@
 node_modules
 .env
+
+
+.message({
+                "string.min": "password must be minimum of 8 characters",
+                "string.pattern":"password must contain uppercase, lowercase, numbers and a special characters"
+            })
